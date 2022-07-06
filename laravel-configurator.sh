@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 #Config - set these to your own desired value
 APP_NAME="Respins.io"
 APP_URL="https://80-respins-devrepository-e5po92k391n.ws-eu51.gitpod.io"
@@ -89,7 +88,7 @@ FORWARD_DB_PORT=$RANDOM_DB_PORT
 FORWARD_MINIO_PORT=$FORWARD_MINIO_PORT
 FORWARD_MINIO_CONSOLE_PORT=$FORWARD_MINIO_CONSOLEPORT
 FORWARD_REDIS_PORT=$RANDOM_REDIS_PORT
-EOFsy
+EOF
 echo -e "${LIGHT_CYAN}Appended configuration to .env:${NC} 
 APP_PORT=$APP_PORT 
 FORWARD_DB_PORT=$RANDOM_DB_PORT 
