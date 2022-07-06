@@ -25,7 +25,7 @@ echo ""
 if sudo -n true 2>/dev/null; then
     sudo chown -R $USER: .
     echo -e "${WHITE}Install of the base app seems to have been succesfull. Now execute:"
-    echo -e "${CYAN}cd respins-laravel && ./vendor/bin/sail up"
+    echo -e "${CYAN}cd respins-laravel && ./vendor/bin/sail up -d"
 else
     echo -e "${WHITE}Please provide your password so we can make some final adjustments to your application's permissions.${NC}"
     echo ""
