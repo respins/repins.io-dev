@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #Config - set these to your own desired value
+#Should be moved to seperated .env imo
 APP_NAME="Respins.io"
 APP_URL="https://80-respins-devrepository-e5po92k391n.ws-eu51.gitpod.io"
 
@@ -11,7 +12,7 @@ WHITE='\033[1;37m'
 NC='\033[0m'
 
 echo
-echo -e "${LIGHT_CYAN}Respins configuration"
+echo -e "${LIGHT_CYAN}Respins.io Configurator"
 echo -e "${WHITE}Ensure that the .env file is writable."
 echo
 echo -e "${LIGHT_CYAN}Most variables will apply only the first time you run this script. You can run truncate script if you wish to start afresh."
@@ -32,7 +33,7 @@ echo -e "${NC}If APP_NAME is changed please execute:"
 echo -e "${NC}cd respins-laravel && ./vendor/bin/sail artisan key:generate"
 echo
 
-#Change drivers in .env
+#Change the default drivers in .env
 echo
 echo -e "${LIGHT_CYAN}Config the default drivers.."
 echo -e "${NC}> Changing BROADCAST_DRIVER from log to redis"
@@ -49,6 +50,7 @@ echo -e "${NC}> Changing LOG_CHANNEL from stack to daily"
 sed -i "s|LOG_CHANNEL=stack|LOG_CHANNEL=daily|g" respins-laravel/.env
 
 #Randomized string generation
+#Should only be run once, as will not apply the runs afterwards to protect
 echo -e "${WHITE}"
 read -p "Do you want to change default passwords for your drivers? <y/N> " prompt
 if [[ $prompt =~ [yY](es)* ]]; then
@@ -66,15 +68,12 @@ sed -i "s|MINIO_ROOT_PASSWORD: 'password'|MINIO_ROOT_PASSWORD: '$RANDOMIZED_PASS
 sed -i "s|MINIO_ROOT_USER: 'sail'|MINIO_ROOT_USER: 'respins'|g" respins-laravel/docker-compose.yml
 echo -e "${WHITE}> MINIO_ROOT_USER set to respins"
 echo -e "${WHITE}> MINIO_ROOT_PASSWORD set to $RANDOMIZED_PASSWORD_MINIO"
-#echo -e "${LIGHT_CYAN}Generating redis password.."
-#sleep 3
-#RANDOMIZED_PASSWORD_REDIS=$(date +%s | sha256sum | base64 | head -c 32 ; echo)
-#sed -i "s|REDIS_PASSWORD=null|REDIS_PASSWORD=$RANDOMIZED_PASSWORD_REDIS|g" respins-laravel/.env
-#echo -e "${WHITE}> REDIS_PASSWORD set to $RANDOMIZED_PASSWORD_REDIS"
 fi
 
 echo
 
+#Randomized ports for minio, database, redis
+#Should only be run once as it appends the ports to .env file
 read -p "Do you wish to append randomized ports for your services to .env? <y/N> " prompt
 if [[ $prompt =~ [yY](es)* ]]; then
 APP_PORT="80"
@@ -98,8 +97,8 @@ FORWARD_REDIS_PORT=$RANDOM_REDIS_PORT"
 fi
 
 echo
-echo
+
+#Completed configurator script
 echo -e "${LIGHT_CYAN}Configuration completed! Make sure to restart your containers:"
 echo -e "${WHITE}cd respins-laravel && ./vendor/bin/sail restart"
 echo
-
