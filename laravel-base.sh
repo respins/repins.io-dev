@@ -11,7 +11,7 @@ docker run --rm \
     -v "$(pwd)":/opt \
     -w /opt \
     laravelsail/php81-composer:latest \
-    bash -c "laravel new example-app && mv example-app respins-laravel && cd respins-laravel && php ./artisan sail:install --with=mariadb,redis,minio,selenium"
+    bash -c "laravel new respins-laravel && cd respins-laravel && php ./artisan sail:install --with=mariadb,redis,minio,selenium"
 
 cd respins-laravel
 
@@ -24,11 +24,8 @@ echo ""
 
 if sudo -n true 2>/dev/null; then
     sudo chown -R $USER: .
-    echo -e "${WHITE}Install of the base app seems to have been succesfull. Now executing ${NC} ./vendor/bin/sail up"
-    bash -c "chmod 777 ${PWD}/vendor/bin/sail"
-    bash -c "chmod -R 777 ${PWD}/storage"
-    bash -c "chmod -R 777 ${PWD}/bootstrap/cache"
-    bash -c "sudo ${PWD}/vendor/bin/sail up -d"
+    echo -e "${WHITE}Install of the base app seems to have been succesfull. Now execute:"
+    echo -e "${CYAN}cd respins-laravel && ./vendor/bin/sail up"
 else
     echo -e "${WHITE}Please provide your password so we can make some final adjustments to your application's permissions.${NC}"
     echo ""

@@ -3,7 +3,7 @@
 
 #Config - set these to your own desired value
 APP_NAME="Respins.io"
-APP_URL="https://80-respins-devrepository-al12nbv4ix0.ws-eu51.gitpod.io"
+APP_URL="https://80-respins-devrepository-e5po92k391n.ws-eu51.gitpod.io"
 
 #Start of script
 CYAN='\033[0;36m'
