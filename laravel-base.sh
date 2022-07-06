@@ -1,12 +1,13 @@
 #!/bin/bash
 docker info > /dev/null 2>&1
 
-# Ensure that Docker is running...
+#Ensure that Docker is running...
 if [ $? -ne 0 ]; then
     echo "Docker is not running."
     exit 1
 fi
 
+#Docker laravel sail..
 docker run --rm \
     -v "$(pwd)":/opt \
     -w /opt \
@@ -15,6 +16,7 @@ docker run --rm \
 
 cd respins-laravel
 
+#Coloring
 CYAN='\033[0;36m'
 LIGHT_CYAN='\033[1;36m'
 WHITE='\033[1;37m'
@@ -31,5 +33,6 @@ else
     echo ""
     sudo chown -R $USER: .
     echo ""
-    echo -e "${WHITE}Thank you! We hope you build something incredible. Dive in with:${NC} cd example-app && ./vendor/bin/sail up"
+    echo -e "${WHITE}Thank you! We hope you build something incredible. Dive in with:"
+    echo -e "${CYAN}cd respins-laravel && ./vendor/bin/sail up -d"
 fi
