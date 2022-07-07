@@ -14,20 +14,13 @@ Main goal is to combine (in package form) the following 3 industry areas within 
 This is a project actively in the making and completely free of charge & open-source. Visit [www.respins.io](https://respins.io) for more information on how you can participate development.
 
 Some included tech-stack:
-
-    - PHP Backend (Laravel)
-
-    - Minio
-
-    - Maria DB
-
-    - Redis
-
-    - Selenium (browser emulation)
-
-    - Socketti & Pusher (nodejs/websocket)
-
-    - Envoy
+ - PHP Backend (Laravel)
+ - Minio
+ - Maria DB
+ - Redis
+ - Selenium (browser emulation)
+ - Socketti & Pusher (nodejs/websocket)
+ - Envoy
 
 ## Future
 In future I would want to build more in regards to (open) or semi-open (freemium) sourced casino software (operator side). 
