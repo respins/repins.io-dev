@@ -5,3 +5,4 @@ respins-laravel/
 .phpunit.result.cache
 vendor
 node_modules
+respins-laravel-nosail/
