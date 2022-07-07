@@ -3,7 +3,7 @@
 #Config - set these to your own desired value
 #Should be moved to seperated .env imo
 APP_NAME="Respins.io"
-APP_URL="https://80-respinning-respinning-h0rgerwwh3v.ws-eu52.gitpod.io"
+APP_URL="https://80-respinning-respinning-li5ezuu3sea.ws-eu51.gitpod.io"
 
 #Start of script
 CYAN='\033[0;36m'
