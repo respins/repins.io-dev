@@ -5,4 +5,16 @@ respins-laravel/
 .phpunit.result.cache
 vendor
 node_modules
-respins-laravel-nosail/
+respins-laravel-nosail/public/
+respins-laravel-nosail/vendor/
+respins-laravel-nosail/node_modules/
+respins-laravel-nosail/.env
+.env
+respins-laravel-nosail/composer.lock
+respins-laravel-nosail/package-lock.json
+respins-laravel-nosail/README.md
+respins-laravel-nosail/storage/logs/*
+respins-laravel-nosail/storage/framework/views/*
+respins-laravel-nosail/storage/framework/cache/*
+respins-laravel-nosail/storage/framework/sessions/*
+respins-laravel-nosail/bootstrap/cache/*
