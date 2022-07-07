@@ -13,12 +13,20 @@ Main goal is to combine (in package form) the following 3 industry areas within 
 
 This is a project actively in the making and completely free of charge & open-source. Visit [www.respins.io](https://respins.io) for more information on how you can participate development.
 
-Including tech-stack within docker:
+Some included tech-stack:
+
     - PHP Backend (Laravel)
+
     - Minio
+
     - Maria DB
+
     - Redis
-    - Selenium (Dusk support) Browser Emulation
+
+    - Selenium (browser emulation)
+
+    - Socketti & Pusher (nodejs/websocket)
+
     - Envoy
 
 ## Future
@@ -29,17 +37,20 @@ However in meantime I plan myself to release continued free of charge snippets &
 ## Modules
 Initial setup is to try and package up as much as possible so that it becomes easy to lightweight opt-in specific features & moduels you actually need. Though however due to increasing lack of motivation to keep re-create the same (before being able to start with fun bit), I will be putting packaged in following setup:
 
-    - "respins-laravel"
-        This is laravel baseplate, we're trying to keep this as close paired (if not 1:1 paired) to the original laravel project so you can keep this really as a simple and fast solution to setup or test iGaming development on your machine.
-    - "respins-base-functions"
-        Initial functions to just get your first games working (closely paired could be considered being aggregation functions).
-        Includes database migrations, seeding and so on.
-        Includes helpers, as example: 
-            Like proxy facades so you can communicate easily with genuine gameprovider servers, in most cases employing Softswiss/BlueOcean methods like f.e. changing demo games to look like genuine $/EUR games and what not. 
-        This also holds the base in/out authentication and serves as normalization of win/loss/transactional storing etc. etc.
-    - "respins-game-X" (replace X by gameprovider/gamecategory, like name format f.e. respins-game-pragmaticplay etc.)
-        Will try to keep game packages as opt-in standalone's so that it gives total and complete freedom on what type of games and what type of setup you can use.
-        Releases under Respins.io will always be based on existing games and existing methods to be able to use these games for free.
+- "respins-laravel"
+    This is laravel baseplate, we're trying to keep this as close paired (if not 1:1 paired) to the original laravel project so you can keep this really as a simple and fast solution to setup or test iGaming development on your machine.
+
+- "respins-base-functions"
+    Initial functions to just get your first games working (closely paired could be considered being aggregation functions).
+    Includes database migrations, seeding and so on.
+    Includes helpers, as example: 
+        Like proxy facades so you can communicate easily with genuine gameprovider servers, in most cases employing Softswiss/BlueOcean methods like f.e. changing demo games to look like genuine $/EUR games and what not. 
+    This also holds the base in/out authentication and serves as normalization of win/loss/transactional storing etc. etc.
+
+- "respins-game-X" (replace X by gameprovider/gamecategory, like name format f.e. respins-game-pragmaticplay etc.)
+    Will try to keep game packages as opt-in standalone's so that it gives total and complete freedom on what type of games and what type of setup you can use.
+    Releases under Respins.io will always be based on existing games and existing methods to be able to use these games for free.
+
     
 ## Got a great idea? Or are you simply motivated to create something out of this?
 
@@ -51,5 +62,5 @@ While small amount in retrospect, I rather give many people a chance and have ju
 
 While 50k Euro's is initial absolute top amount per project, can ofcourse bump this up to hundreds~ of whatever, if you are good and we're good fit then we can work together just have to be safe with internet people ^_^.
  
-Not investing in any without active accredited developers, 
+Not investing in any project without their own (active) accredited developers.
 
