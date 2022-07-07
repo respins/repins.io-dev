@@ -2,13 +2,14 @@
 [<img src="https://github-ads.s3.eu-central-1.amazonaws.com/support-ukraine.svg?t=1" />](https://supportukrainenow.org)
 
 # Respins.io base functions
+ "repositories": [
+    {
+        "type": "path",
+        "url": "../respins/base-functions"
+    }
+    ],
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/respins/base-functions.svg?style=flat-square)](https://packagist.org/packages/respins/base-functions)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/respins/base-functions/run-tests?label=tests)](https://github.com/respins/base-functions/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/respins/base-functions/Check%20&%20fix%20styling?label=code%20style)](https://github.com/respins/base-functions/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/respins/base-functions.svg?style=flat-square)](https://packagist.org/packages/respins/base-functions)
-
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+"respins/base-functions": "*"
 
 ## Support us
 

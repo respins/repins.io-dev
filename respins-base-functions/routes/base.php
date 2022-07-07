@@ -23,11 +23,7 @@ Route::middleware('auth', 'throttle:2000,1')->group(function () {
 ## Web middleware
 # Middleware to use when in need to 'catch' legitimate player request data to forward using our proxy helpers or to display frontend pre-auth on casino level.
 Route::middleware('web', 'throttle:2000,1')->group(function () {
-
     Route::get('/hoppa', function () {
         return 'test';
     });
-    
 });
-
-
