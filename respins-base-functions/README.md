@@ -2,14 +2,13 @@
 [<img src="https://github-ads.s3.eu-central-1.amazonaws.com/support-ukraine.svg?t=1" />](https://supportukrainenow.org)
 
 # Respins.io base functions
- "repositories": [
-    {
-        "type": "path",
-        "url": "../respins/base-functions"
-    }
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/respins/base-functions"
+        }
     ],
-
-"respins/base-functions": "*"
+        "respins/base-functions": "*",
 
 ## Support us
 

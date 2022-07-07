@@ -22,3 +22,4 @@ class BaseFunctionsServiceProvider extends PackageServiceProvider
             ->hasCommand(BaseFunctionsCommand::class);
     }
 }
+
