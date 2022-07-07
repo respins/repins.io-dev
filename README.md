@@ -5,11 +5,11 @@ In our case we are using and enforcing methods as used by BlueOcean.com, Softswi
 
 Main goal is to combine (in package form) the following 3 industry areas within a single project:
 
- - Game Provider (gamedev-level): We are emulating real games in this project to retain the most authenticate technical experience
+ - **Game Provider (gamedev-level)**: We are emulating real games in this project to retain the most authenticate technical experience
 
- - Aggregation (distribution-level): Emulating the technical link between the game-provider and the casino by relaying the info back and forth between the two.
+ - **Aggregation (distribution-level)**: Emulating the technical link between the game-provider and the casino by relaying the info back and forth between the two.
 
- - Operator (casino-level): Think of casino-level adding/subtracting to balance based, authentication scaffolding and hopefully in time I can focus more on this area as I do enjoy this personally the most to develop & create, but as all is open source it's depending on what people want/need and how many of you guys will contribute to this project & community
+ - **Operator (casino-level)**: Think of casino-level adding/subtracting to balance based, authentication scaffolding and hopefully in time I can focus more on this area as I do enjoy this personally the most to develop & create, but as all is open source it's depending on what people want/need and how many of you guys will contribute to this project & community
 
 This is a project actively in the making and completely free of charge & open-source. Visit [www.respins.io](https://respins.io) for more information on how you can participate development.
 
