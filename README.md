@@ -50,6 +50,6 @@ Please do note that would involve due digiligence and all would be paid only and
 While small amount in retrospect, I rather give many people a chance and have just 1 do 'ok', some cases you only need 10-20k at most to get going - get your casino license and whatever boring costs. 
 
 While 50k Euro's is initial absolute top amount per project, can ofcourse bump this up to hundreds~ of whatever, if you are good and we're good fit then we can work together just have to be safe with internet people ^_^.
-
+ 
 Not investing in any without active accredited developers, 
 
