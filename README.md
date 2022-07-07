@@ -3,7 +3,7 @@ Respins.io is a toolbox & toolkit based and meant for development within casino 
 
 In our case we are using and enforcing methods as used by BlueOcean.com, Softswiss.com etc. on their productional casino's - however this in contrary to the prior mentioned this should be used without malicious intent or any fraud activities.
 
-Main goal is to combine (in package form) the following 3 industry areas within a single project:
+Main goal is to combine (in package form) the following 3 industry areas within a single toolbox that you can fire up whenever and within minutes:
 
  - **Game Provider (gamedev-level)**: We are emulating real games in this project to retain the most authenticate technical experience
 
@@ -22,16 +22,11 @@ Some included tech-stack:
  - Socketti & Pusher (nodejs/websocket)
  - Envoy
 
-## Future
-In future I would want to build more in regards to (open) or semi-open (freemium) sourced casino software (operator side). 
-
-However in meantime I plan myself to release continued free of charge snippets & modules while providing free support to anyone needing help on setup and whatsoever through our community links, check [www.respins.io](https://respins.io)
-
 ## Modules
 Initial setup is to try and package up as much as possible so that it becomes easy to lightweight opt-in specific features & moduels you actually need. Though however due to increasing lack of motivation to keep re-create the same (before being able to start with fun bit), I will be putting packaged in following setup:
 
 - "respins-laravel"
-    This is laravel baseplate, we're trying to keep this as close paired (if not 1:1 paired) to the original laravel project so you can keep this really as a simple and fast solution to setup or test iGaming development on your machine.
+    This is simply laravel baseplate, all contributors & myself are trying to keep this as close paired (if not actually 1:1 paired) to the original laravel project so you can keep this really as a simple and fast solution to setup or test iGaming development on your machine. This opens up for great amount of open source & strong supported plugins, visit [madewithlaravel.com](https://madewithlaravel.com) for glimpse of cool stuff that is available to all.
 
 - "respins-base-functions"
     Initial functions to just get your first games working (closely paired could be considered being aggregation functions).
@@ -44,7 +39,21 @@ Initial setup is to try and package up as much as possible so that it becomes ea
     Will try to keep game packages as opt-in standalone's so that it gives total and complete freedom on what type of games and what type of setup you can use.
     Releases under Respins.io will always be based on existing games and existing methods to be able to use these games for free.
 
-    
+
+## Future
+In future I would want to build more in regards to (open) or semi-open (freemium) sourced casino software (operator side). 
+
+However in meantime I plan myself to release continued free of charge snippets & modules while providing free support to anyone needing help on setup and whatsoever through our community links, check [www.respins.io](https://respins.io)
+
+## Disclaimer
+While technical methods/setups used are similarly used within production environments on casino's like [Bc.game](https://www.bc.game), [Stake.com](https://www.stake.com), [Sportsbet.com](https://sportsbet.com) and world's biggest iGaming distributors like [Softswiss.com](https://softswiss.com) & [BlueOcean.com](https://www.blueocean.com) - you should refrain from malpractice like the skipping of spins and any other illegal activities with actual gamblers.
+
+All packages provided for game providers are done so using their own demo pages & resources (as they actively open this up for such malpractice), please really do not try to mis-use/duplicate to use on actual fair-play & small game providers.
+
+Regardless you should **never** use any of the resources provided straight out of the box in any productional capacity.
+
+More info on how to spot an abusing provider/aggregator will follow in some time @ [respins.io](https://respins.io).
+
 ## Got a great idea? Or are you simply motivated to create something out of this?
 
 If you have a great idea I can personally invest up-to 50K Euro's to your business start-up if you actively use & credit project, and ofcourse if your idea is interesting & "innovating" enough, basically innovating is to beat trash casino systems that are still globally used, in example by parties as MondoGaming.eu so while not hard to beat, if you have something unique or contribute - feel free to e-mail [investments@respins.io](mailto:investments@respins.io) or contact through Telegram.
