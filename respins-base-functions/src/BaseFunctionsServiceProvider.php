@@ -11,15 +11,14 @@ class BaseFunctionsServiceProvider extends PackageServiceProvider
     public function configurePackage(Package $package): void
     {
         /*
-         * This class is a Package Service Provider
-         *
-         * More info: https://github.com/spatie/laravel-package-tools
+         * configuration of base package
          */
         $package
             ->name('base-functions')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_base-functions_table')
+            ->hasViews('respins-base-views')
+            ->hasRoutes(['base', 'game'])
+            ->hasMigration('create_gamesessions_table')
             ->hasCommand(BaseFunctionsCommand::class);
     }
 }
