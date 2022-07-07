@@ -1,0 +1,20 @@
+version: '3.1'
+services:
+  db:
+    image: mariadb:10.3
+    restart: always
+    ports:
+      - 3304:3306
+    environment:
+      #Change to your own
+      MARIADB_USER: respins
+      MARIADB_PASSWORD: respinsPassw0rd!
+      MARIADB_DATABASE: respins_db
+      MARIADB_ROOT_PASSWORD: respinsRootChangeMe
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
