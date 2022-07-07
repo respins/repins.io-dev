@@ -1,12 +1,12 @@
 <?php
 
-namespace ase\RespinsBaseFunctions;
+namespace Respins\BaseFunctions;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use ase\RespinsBaseFunctions\Commands\RespinsBaseFunctionsCommand;
+use Respins\BaseFunctions\Commands\BaseFunctionsCommand;
 
-class RespinsBaseFunctionsServiceProvider extends PackageServiceProvider
+class BaseFunctionsServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class RespinsBaseFunctionsServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('respins-base-functions')
+            ->name('base-functions')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_respins-base-functions_table')
-            ->hasCommand(RespinsBaseFunctionsCommand::class);
+            ->hasMigration('create_base-functions_table')
+            ->hasCommand(BaseFunctionsCommand::class);
     }
 }

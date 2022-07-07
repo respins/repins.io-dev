@@ -1,12 +1,12 @@
 <?php
 
-namespace ase\RespinsBaseFunctions\Commands;
+namespace Respins\BaseFunctions\Commands;
 
 use Illuminate\Console\Command;
 
-class RespinsBaseFunctionsCommand extends Command
+class BaseFunctionsCommand extends Command
 {
-    public $signature = 'respins-base-functions';
+    public $signature = 'base-functions';
 
     public $description = 'My command';
 

@@ -1,12 +1,12 @@
 {
-    "name": "respins-io/respins-base-functions",
-    "description": "Base functions used on Respins.io",
+    "name": "respins/base-functions",
+    "description": "Respins.io base functions",
     "keywords": [
-        "respins.io",
+        "respins",
         "laravel",
-        "respins-base-functions"
+        "base-functions"
     ],
-    "homepage": "https://github.com/respins-io/respins-base-functions",
+    "homepage": "https://github.com/respins/base-functions",
     "license": "MIT",
     "authors": [
         {
@@ -30,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "ase\\RespinsBaseFunctions\\": "src",
-            "ase\\RespinsBaseFunctions\\Database\\Factories\\": "database/factories"
+            "Respins\\BaseFunctions\\": "src",
+            "Respins\\BaseFunctions\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ase\\RespinsBaseFunctions\\Tests\\": "tests"
+            "Respins\\BaseFunctions\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -51,10 +51,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ase\\RespinsBaseFunctions\\RespinsBaseFunctionsServiceProvider"
+                "Respins\\BaseFunctions\\BaseFunctionsServiceProvider"
             ],
             "aliases": {
-                "RespinsBaseFunctions": "ase\\RespinsBaseFunctions\\Facades\\RespinsBaseFunctions"
+                "BaseFunctions": "Respins\\BaseFunctions\\Facades\\BaseFunctions"
             }
         }
     },

@@ -1,6 +1,6 @@
 <?php
 
-namespace ase\RespinsBaseFunctions\Database\Factories;
+namespace Respins\BaseFunctions\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

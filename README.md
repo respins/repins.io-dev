@@ -1,28 +1,27 @@
 ## Respins.io
-Respins.io is a toolbox & toolkit based and meant for development within casino industry, whereas normally needing multi-systemed setup and more often then not you will not be able to locally/offline develop as relying on many aspects that are usually online.
+Respins.io is a toolbox based and meant for development within casino industry, whereas normally needing multi-system setup and more often then not you will not be able to locally/offline develop as relying on many aspects that are usually online.
 
 In our case we are using and enforcing methods as used by BlueOcean.com, Softswiss.com etc. on their productional casino's - however this in contrary to the prior mentioned this should be used without malicious intent or any fraud activities.
 
 Main goal is to combine (in package form) the following 3 industry areas within a single toolbox that you can fire up whenever and within minutes:
 
- - **Game Provider (gamedev-level)**: We are emulating real games in this project to retain the most authenticate technical experience
+ - **Game Provider (gamedeveloper-level)**
+    In this project we are emulating provider's slotmachine & iGaming products to retain the most authenticate technical experience. These are in seperated, per-provider, packaged up for you to implement - these guide as example for your own games to easily setup your own dev area.
 
- - **Aggregation (distribution-level)**: Emulating the technical link between the game-provider and the casino by relaying the info back and forth between the two.
+ - **Aggregation (distribution-level)**
+    Emulating the technical link between the game-provider and the casino by relaying the info back and forth between the two.
 
- - **Operator (casino-level)**: Think of casino-level adding/subtracting to balance based, authentication scaffolding and hopefully in time I can focus more on this area as I do enjoy this personally the most to develop & create, but as all is open source it's depending on what people want/need and how many of you guys will contribute to this project & community
+ - **Operator (casino-level)**
+    Think of casino-level adding/subtracting to balance based, authentication scaffolding and hopefully in time I can focus more on this area as I do enjoy this personally the most to develop & create, but as all is open source it's depending on what people want/need and how many of you guys will contribute to this project & community
 
 This is a project actively in the making and completely free of charge & open-source. Visit [www.respins.io](https://respins.io) for more information on how you can participate development.
 
-Some included tech-stack:
- - PHP Backend (Laravel)
- - Minio
- - Maria DB
- - Redis
- - Selenium (browser emulation)
- - Socketti & Pusher (nodejs/websocket)
- - Envoy
+## Future
+In future I would want to build more in regards to (open) or semi-open (freemium) sourced casino software (operator side). 
 
-## Modules
+However in meantime I plan myself to release continued free of charge snippets & modules while providing free support to anyone needing help on setup and whatsoever through our community links, check [www.respins.io](https://respins.io)
+
+## Tech
 Initial setup is to try and package up as much as possible so that it becomes easy to lightweight opt-in specific features & moduels you actually need. Though however due to increasing lack of motivation to keep re-create the same (before being able to start with fun bit), I will be putting packaged in following setup:
 
 - "respins-laravel"
@@ -39,14 +38,22 @@ Initial setup is to try and package up as much as possible so that it becomes ea
     Will try to keep game packages as opt-in standalone's so that it gives total and complete freedom on what type of games and what type of setup you can use.
     Releases under Respins.io will always be based on existing games and existing methods to be able to use these games for free.
 
-
-## Future
-In future I would want to build more in regards to (open) or semi-open (freemium) sourced casino software (operator side). 
-
-However in meantime I plan myself to release continued free of charge snippets & modules while providing free support to anyone needing help on setup and whatsoever through our community links, check [www.respins.io](https://respins.io)
+Some included tech-stack:
+ - PHP Backend (Laravel)
+ - Minio
+ - Maria DB
+ - Redis
+ - Basic frontend scaffolding support for Blade, Vue.js, React, Livewire and more
+ - Selenium (browser emulation)
+ - Socketti & Pusher (nodejs/websocket)
+ - Envoy
 
 ## Disclaimer
-While technical methods/setups used are similarly used within production environments on casino's like [Bc.game](https://www.bc.game), [Stake.com](https://www.stake.com), [Sportsbet.com](https://sportsbet.com) and world's biggest iGaming distributors like [Softswiss.com](https://softswiss.com) & [BlueOcean.com](https://www.blueocean.com) - you should refrain from malpractice like the skipping of spins and any other illegal activities with actual gamblers.
+While technical methods/setups used are similarly used within production environments on casino's like [Bc.game](https://www.bc.game), [Stake.com](https://www.stake.com), [Sportsbet.com](https://sportsbet.com) and world's biggest iGaming distributors like [Softswiss.com](https://softswiss.com) & [BlueOcean.com](https://www.blueocean.com):
+
+**You should refrain from malpractice like the skipping of big-win spins (this is where name Respins.io originates from) and any other illegal activities with actual gamblers.** Instead just use those that are actively abusing, as they are the ones responsible for any malpractice - not you. Those illegal gambling providers include:
+
+Evolution Gaming, Pragmatic Play, BGaming, Evoplay, Spearhead Studios, Rubyplay, Platiplus, Oryx Gaming, GameArt and many more.
 
 All packages provided for game providers are done so using their own demo pages & resources (as they actively open this up for such malpractice), please really do not try to mis-use/duplicate to use on actual fair-play & small game providers.
 

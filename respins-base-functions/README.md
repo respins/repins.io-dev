@@ -1,22 +1,42 @@
+
+[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/support-ukraine.svg?t=1" />](https://supportukrainenow.org)
+
+# Respins.io base functions
+
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/respins/base-functions.svg?style=flat-square)](https://packagist.org/packages/respins/base-functions)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/respins/base-functions/run-tests?label=tests)](https://github.com/respins/base-functions/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/respins/base-functions/Check%20&%20fix%20styling?label=code%20style)](https://github.com/respins/base-functions/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/respins/base-functions.svg?style=flat-square)](https://packagist.org/packages/respins/base-functions)
+
+This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+
+## Support us
+
+[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/base-functions.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/base-functions)
+
+We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
+
+We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
+
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require respins-io/respins-base-functions
+composer require respins/base-functions
 ```
 
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --tag="respins-base-functions-migrations"
+php artisan vendor:publish --tag="base-functions-migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="respins-base-functions-config"
+php artisan vendor:publish --tag="base-functions-config"
 ```
 
 This is the contents of the published config file:
@@ -29,14 +49,14 @@ return [
 Optionally, you can publish the views using
 
 ```bash
-php artisan vendor:publish --tag="respins-base-functions-views"
+php artisan vendor:publish --tag="base-functions-views"
 ```
 
 ## Usage
 
 ```php
-$respinsBaseFunctions = new ase\RespinsBaseFunctions();
-echo $respinsBaseFunctions->echoPhrase('Hello, ase!');
+$baseFunctions = new Respins\BaseFunctions();
+echo $baseFunctions->echoPhrase('Hello, Respins!');
 ```
 
 ## Testing
@@ -51,7 +71,7 @@ Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed re
 
 ## Contributing
 
-Please see [CONTRIBUTING](https://github.com/respins.io/.github/blob/main/CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](https://github.com/respins/.github/blob/main/CONTRIBUTING.md) for details.
 
 ## Security Vulnerabilities
 
@@ -59,7 +79,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [Respins.io](https://github.com/respins.io)
+- [Respins.io](https://github.com/respins)
 - [All Contributors](../../contributors)
 
 ## License
