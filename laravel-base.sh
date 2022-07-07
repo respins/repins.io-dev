@@ -11,8 +11,8 @@ fi
 docker run --rm \
     -v "$(pwd)":/opt \
     -w /opt \
-    docker.io/laravelsail/php81-composer:latest \
-    bash -c "laravel new respins-laravel && cd respins-laravel && php ./artisan sail:install --with=mariadb,redis,minio,selenium"
+    docker.io/laravelsail/php80-composer:latest \
+    bash -c "laravel new respins-laravel && cd respins-laravel && php ./artisan sail:install --with=mariadb,redis,minio "
 
 cd respins-laravel
 mkdir "packages"
