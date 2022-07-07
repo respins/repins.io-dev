@@ -15,7 +15,8 @@ docker run --rm \
     bash -c "laravel new respins-laravel && cd respins-laravel && php ./artisan sail:install --with=mariadb,redis,minio,selenium"
 
 cd respins-laravel
-mkdir "packaged"
+mkdir "packages"
+mkdir "packages/respins"
 
 #Coloring
 CYAN='\033[0;36m'
