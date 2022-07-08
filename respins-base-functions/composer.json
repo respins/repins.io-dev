@@ -29,11 +29,6 @@
             "Respins\\BaseFunctions\\Database\\Factories\\": "database/factories"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Respins\\BaseFunctions\\Tests\\": "tests"
-        }
-    },
     "config": {
         "sort-packages": true
     },
